@@ -11,8 +11,7 @@ __all__ = ['SlackWebHook']
 
 
 class SlackWebHook:
-    """
-    Build a slack-webhook for a flask application
+    """Build a slack-webhook for a flask application
 
     :param app An flask application
     :param endpoint Name for a endpoint
@@ -25,9 +24,9 @@ class SlackWebHook:
         self._webhook_types = ['out-going-hook']
 
     def hook(self, hook_type='out-going-hook'):
-        """Register a function as hook
+        """Register an functions as hook
 
-        :param hook_type: A type name of a hook
+        :param hook_type A name of a hook
         """
         def wrapper(func):
             self._webhooks[hook_type].append(func)
