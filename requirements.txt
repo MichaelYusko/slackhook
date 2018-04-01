@@ -1,4 +1,4 @@
-flask
+flask==0.12.2
 isort==4.3.4
 flake8==3.5.0
 tox==2.9.1
