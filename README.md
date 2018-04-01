@@ -16,7 +16,7 @@ pip install slackhook
 Example of usage
 ```python
 from flask import Flask, jsonify
-from slackhook import SlackWebHook
+from slackhook.hook import SlackWebHook
 
 # :NOTE:
 # When you initialize an application
